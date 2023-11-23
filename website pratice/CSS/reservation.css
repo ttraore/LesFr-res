@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+}
+
+.header-container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+}
+
+.header {
+    grid-column: span 2;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: url('../ressources/Images/wine_image.svg'); /* Relative path to your image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    max-height: 462px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ddb0c2;
+    opacity: 0.85; /* White color with 50% opacity */
+    z-index: 1;
+}
+
+.header > * {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    color: #35497d;
+    font-size: 32px;
+    font-family: "Jost";
+    line-height: 42px;
+    align-items: baseline;
+    max-width: 100%;
+    padding-left: 118px;
+    justify-self: left;
+    align-self: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.book.table {
+    justify-self: end; /* Aligns to the right of its cell */
+    align-self: center; /* Centers vertically in its cell */
+    margin-right: 93px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.btn {
+    cursor: pointer;
+    top: 46px;
+    left: 1136px;
+    width: 192px;
+    height: 64px;
+    padding: 0px 8px;
+    border: 1px solid #432a34;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.1);
+    background-color: #432a34;
+    color: #ddb0c2;
+    font-size: 20px;
+    font-family: "Jost";
+    line-height: 26px;
+    outline: none;
+    
+}
+
+.title {
+    grid-column: span 2;
+    color: #35497d;
+    font-size: 69px;
+    font-family: "Jost";
+    line-height: 107px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+a {
+    text-decoration: none;
+    color: #432a34;;
+}
+
+.reservation-form .intro-text {
+    color: #35497d;
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-right: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    color: #35497d;
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+    cursor: pointer;
+    width: 510px;
+    height: 55px;
+    padding: 0px 8px;
+    border: 1px solid #35497d;
+    box-sizing: border-box;
+    border-radius: 32px;
+    background-color: #ddb0c2;
+    color: #35497d;
+    font-size: 20px;
+    font-family: "Jost";
+    line-height: 26px;
+    text-align: center;
+    outline: none;
+    margin-top: 15px;
+}
+
+.book-now {
+    cursor: pointer;
+    top: 1546px;
+    left: 592px;
+    width: 256px;
+    height: 63px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.1);
+    background-color: #432a34;
+    color: #e4c3cf;
+    font-size: 24px;
+    font-family: "Jost";
+    font-weight: 500;
+    line-height: 31px;
+    outline: none;
+    margin-left: 135px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .header-container-grid {
+        grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+    }
+
+    .header {
+        grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+        padding: 20px; /* Adjust padding as needed */
+        max-height: auto; /* Remove max height restriction */
+    }
+
+    .logo {
+        padding-left: 20px; /* Adjust padding as needed */
+        padding-right: 20px; /* Adjust padding as needed */
+        justify-self: left; /* Center logo and booking button */
+        text-align: left; /* Center the text of the logo if it's not an image */
+        font-size: 25px; /* Adjust font size as needed */
+    }
+    .book.table {
+        width: calc(100% - 10px); /* Make the button width responsive */
+        margin-left: auto; /* Center the button */
+        margin-right: auto; /* Center the button */
+        margin-bottom: 25px; /* Adjust margin as needed */
+    }
+
+    .btn {
+        top: auto;
+        left: auto;
+        position: static; /* Allow natural document flow */
+        width: auto; /* Adjust width to fit content */
+        margin-top: 20px; /* Add some margin on the top */
+        width: calc(100% - 10px); /* Make the button width responsive */
+    }
+
+    .title {
+        font-size: 25px; /* Smaller font size for smaller screens */
+        line-height: 34px; /* Adjust line height as needed */
+        margin: 10px auto; /* Adjust margin as needed */
+        padding: 0 20px; /* Add padding to maintain layout */
+    }
+
+    .title .h1-1 {
+        display: block; /* Ensures 'TABLE' starts on a new line */
+        margin-bottom: 0.5em; /* Adds space between 'TABLE' and 'RESERVATION' */
+        /* Other styles remain unchanged */
+    }
+
+    .reservation-form .intro-text {
+        font-size: 20px; /* Smaller font size for smaller screens */
+        margin: 25px auto; /* Adjust margin as needed */
+    }
+
+    #form {
+        margin-top: 40px; /* Adjust margin as needed */
+        margin-right: auto; /* Center the form */
+        margin-left: auto; /* Center the form */
+    }
+
+    .form-group {
+        width: calc(100% - 40px); /* Make the input width responsive */
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"],
+    select {
+        width: 100%; /* Make the input width responsive */
+        height: auto; /* Adjust height as needed */
+    }
+
+    .book-now {
+        width: calc(100% - 40px); /* Make the button width responsive */
+        margin-left: auto; /* Center the button */
+        margin-right: auto; /* Center the button */
+        margin-bottom: 25px; /* Adjust margin as needed */
+    }
+}

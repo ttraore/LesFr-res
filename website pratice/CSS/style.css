@@ -1,0 +1,414 @@
+
+
+body{
+    margin: 0;
+}
+.container-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header{
+    grid-column: span 2;
+    background-color: #ddb0c2;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Updated */
+}
+.logo{
+    color: #35497d;
+    font-size: 32px;
+    font-family: "Jost";
+    line-height: 42px;
+    align-items: baseline;
+    max-width: 100%;
+    padding-left: 118px;
+    justify-self: left;
+    align-self: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.book.table {
+    justify-self: end; /* Aligns to the right of its cell */
+    align-self: center; /* Centers vertically in its cell */
+    margin-right: 93px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.btn {
+    cursor: pointer;
+    top: 46px;
+    left: 1136px;
+    width: 192px;
+    height: 64px;
+    padding: 0px 8px;
+    border: 1px solid #432a34;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.1);
+    background-color: #432a34;
+    color: #ddb0c2;
+    font-size: 20px;
+    font-family: "Jost";
+    line-height: 26px;
+    outline: none;
+}
+.title{
+    grid-column: span 2;
+    color: #35497d;
+    font-size: 82px;
+    font-family: "Jost";
+    line-height: 107px;
+    text-align: center;
+    margin: 20px auto;
+}
+.title > .h1-2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+title > .h1-2{
+    margin: 0px 0px 0px 0px;
+}
+.description {
+    grid-column: span 2;
+    color: #35497d;
+    font-size: 28px;
+    font-family: "Jost";
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1102px;
+}
+.description > .p1 {
+    padding: 91px 0px 42px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.description > .p2 {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 78px;
+    max-width: 800px;
+    text-align: center;   
+}
+.image1{
+    width: 100%; /* set the width to 100% */
+    height: 100%; /* set the height to 100% */
+    background-image: url(ressources/Images/Image.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-description{
+    color: #35497d;
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px;
+    text-align: center;
+}
+.menu-description-p3{
+    margin: 66px auto;
+    width: 531px;
+    text-align: center;
+    padding: auto;
+    line-height: 1.6;
+}
+.view-menu{
+    cursor: pointer;
+    width: 320px;
+    height: 64px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.1);
+    background-color: #432a34;
+    color: #ddb0c2;
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px;
+    outline: none;
+}
+.reservation-description{
+    color: #35497d;
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px;
+    text-align: center;
+}
+.reservation-description-p4{
+    color: #35497d;
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px;
+    text-align: center;
+    margin: 213px auto;
+    margin-bottom: 40px;
+    max-width: 484px;
+    padding: 0px 83px 64px 83px;
+    text-align: center;
+}
+.make-reservation{
+    cursor: pointer;
+    width: 320px;
+    height: 64px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.1);
+    background-color: #ddb0c2;
+    color: #432a34;
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px;
+    outline: none;
+    margin-bottom: 116px;
+    text-align: center;
+}
+.read-our-story{
+    grid-column: span 2;
+    position: relative; /* This makes it a containing block for absolute positioning */
+}
+.our-story {
+    position: absolute; /* Position relative to .read-our-story */
+    bottom: 37px; /* Adjust as needed to move the button up from the bottom */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust horizontal centering taking into account button width */
+    z-index: 10; /* Ensure the button is above the image */
+    
+    /* Button styling */
+    cursor: pointer;
+    width: 301px; /* Adjust as needed */
+    height: 64px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.1);
+    background-color: #432a34; /* Adjust color as needed */
+    color: #ddb0c2; /* Adjust text color as needed */
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px;
+    outline: none; 
+    text-align: center;
+    border: none;
+}
+/* Path: CSS/style.css */
+.menu-description, .reservation-description {
+    padding: 20px; /* Adjust the padding to fit your design */
+}
+.image1, .image2, .image3 {
+    background-size: cover;
+    background-position: center;
+}
+img {
+    width: 100%;
+}
+
+/*foorter*/
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* creates two columns */
+    grid-template-rows: auto 1fr; /* first row auto height, second row takes up remaining space */
+}
+.footer-title{
+    grid-column: span 2;
+    color: #35497d;
+    font-size: 32px;
+    font-family: "Jost";
+    line-height: 42px;
+    margin-left: 110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.map-image{
+    width: 493px;
+    height: 333px;
+    background-image: url(./image.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.address-info{
+    color: #35497d;
+    font-size: 24px;
+    font-family: "Jost";
+    font-weight: 500;
+    line-height: 31px;
+    margin-bottom: 29px;
+}
+.address > p {
+    color: #35497d;
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px
+}
+.address p:nth-of-type(2) {
+    margin-bottom: 33px;
+}
+.social-media > p{
+    color: #35497d;
+    font-size: 24px;
+    font-family: "Jost";
+    line-height: 31px; 
+}
+.social-media > img{
+    color: #35497d;
+    fill: #35497d;
+    font-size: 40px;
+    top: 3072px;
+    left: 718px;
+    width: 40px;
+    height: 40px;
+    padding-right: 20px;
+}
+
+/* Add this media query to adjust the styling for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 48px;
+        line-height: 62px;
+    }
+    
+    .description {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 0 20px;
+    }
+    
+    .description > .p1 {
+        padding: 20px 0;
+    }
+    
+    .description > .p2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .menu-description-p3 {
+        margin: 20px auto;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .reservation-description-p4 {
+        margin: 20px auto;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .make-reservation,
+    .view-menu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .our-story {
+        position: static;
+        margin-top: 20px;
+    }
+    
+    .map-image {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    
+    .address-info,
+    .address > p,
+    .social-media > p,
+    .social-media > img {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+/* Responsive styles for when the screen width is 768px or less */
+@media screen and (max-width: 768px) {
+    .container-grid {
+        grid-template-columns: 1fr; /* Stack grid items vertically on small screens */
+    }
+    
+    .header, .image1, .menu-description, .reservation-description, .image2, .read-our-story {
+        grid-column: 1; /* Make each section take full width */
+    } 
+
+    .book.table {
+        justify-self: center; /* Center the booking button */
+        margin-right: 0; /* Remove any specific right margin */
+    }
+    
+    .btn{
+        top: auto;
+        left: auto;
+        position: static; /* Reset positioning to flow within the document */
+        width: auto; /* Adjust width to be more flexible */
+        margin: 0 auto; /* Center the button */
+    }
+
+    .our-story{
+        justify-self: center;
+        margin-left: 50%;
+    }
+
+     /* Footer grid to stack the content vertically on small screens */
+     .footer-grid {
+        display: block; /* Use block layout instead of grid for the footer on mobile */
+    }
+
+    .footer-title {
+        /* Center the title and adjust its size if necessary */
+        text-align: center;
+        font-size: 28px; /* Smaller font size for mobile */
+        /* Reset any other styles that may cause misalignment */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .address,
+    .map-image,
+    .social-media {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .map-image img {
+        /* Ensure the map image fits within the container */
+        width: 100%;
+        height: auto;
+    }
+
+    .address-info {
+        /* Adjust font size and margins for mobile */
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .social-media {
+        /* Align social media icons */
+        display: flex;
+        justify-content: center; /* Center the icons container */
+        align-items: center; /* Align the icons vertically */
+        padding: 0; /* Reset padding */
+        list-style: none; /* In case it's an unordered list */
+    }
+
+    .social-media img {
+        /* Adjust size and spacing for the social media icons */
+        width: 24px; /* Adjust size as necessary */
+        height: auto;
+        margin: 0 10px; /* Space out the social media icons */
+    }
+    
+    /* This ensures that the social media section comes after the address and map */
+    .social-media {
+        margin-top: 20px; /* Space between address/map and social media */
+    }
+}
+
